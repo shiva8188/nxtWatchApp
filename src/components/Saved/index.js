@@ -32,7 +32,7 @@ class Trending extends Component {
     )
   }
 
-  getSuccessData = videos => (
+  getSuccessData = () => (
     <ContextObject.Consumer>
       {value => {
         const {videos, isDarkTheme} = value

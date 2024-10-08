@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom'
 
-import ContextObject from './context/CreateContext.js'
+import ContextObject from './context/CreateContext'
 import Login from './components/Login'
 import Home from './components/Home'
 import VideoDetails from './components/VideoDetails'

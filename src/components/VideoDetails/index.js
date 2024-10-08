@@ -94,8 +94,8 @@ class VideoDetails extends Component {
   getSuccess = isDarkTheme => (
     <ContextObject.Consumer>
       {value => {
-        const {onAddVideos, onDeleteSavedVideo, savedBtn, videos} = value
-
+        const {onAddVideos, onDeleteSavedVideo, videos} = value
+        const {like, disLike, videoData} = this.state
         const {
           id,
           videoUrl,
@@ -107,8 +107,8 @@ class VideoDetails extends Component {
           name,
           profileUrl,
           thumbnail,
-        } = this.state.videoData
-        const {like, disLike, videoData} = this.state
+        } = videoData
+
         const likeColor = like ? '#2563eb' : '#64748b'
         const disLikeColor = disLike ? '#2563eb' : '#64748b'
         const check = videos.find(each => each.id === videoData.id)

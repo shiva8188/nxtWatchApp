@@ -38,12 +38,12 @@ class Home extends Component {
     videosData: [],
   }
 
-  onChangeSearchValue = event => {
-    this.setState({searchInput: event.target.value})
-  }
-
   componentDidMount() {
     this.getData()
+  }
+
+  onChangeSearchValue = event => {
+    this.setState({searchInput: event.target.value})
   }
 
   getData = async () => {

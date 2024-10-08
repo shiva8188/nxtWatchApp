@@ -104,7 +104,6 @@ class Login extends Component {
                     color={color}
                     placeholder="Password"
                     show="true"
-                    id="password"
                     margin="5px"
                     onChange={this.onChangePassword}
                   />
