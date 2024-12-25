@@ -13,6 +13,7 @@ export const HomeContainer = styled.div`
   color: ${props => props.color};
 `
 export const BannerCon = styled.div`
+  position: fixed;
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
   background-size: cover;
   display: flex;
