@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 export const Li = styled.li`
-  width: 320px;
   display: flex;
   flex-direction: column;
   margin: 5px;
   margin-top: 13px;
+  @media (min-width: 768px) {
+    width: 320px;
+  }
 `
 
 export const Img = styled.img`

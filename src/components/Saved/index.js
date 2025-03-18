@@ -81,7 +81,13 @@ class Trending extends Component {
           return (
             <>
               <Header />
-              <Div bg={bgC} color={color} height="100vh">
+              <Div
+                bg={bgC}
+                color={color}
+                height="100vh"
+                direction="column"
+                midDirection="row"
+              >
                 <Sidebar />
                 <Div direction="column" width="100%">
                   <Div height="200px" bg={topBg}>
@@ -98,7 +104,7 @@ class Trending extends Component {
                       >
                         <FaFire />
                       </Div>
-                      <H1 color={color} size="30px">
+                      <H1 color={color} size="25px">
                         Saved Videos
                       </H1>
                     </Div>

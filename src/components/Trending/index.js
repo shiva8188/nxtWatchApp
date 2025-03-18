@@ -97,7 +97,14 @@ class Trending extends Component {
     return videos.map(each => (
       <Link to={`/videos/${each.id}`} className="link">
         <Li key={each.id} color={color}>
-          <Img src={each.thumbnail} alt="video thumbnail" width="40%" />
+          <Img
+            src={each.thumbnail}
+            alt="video thumbnail"
+            width="35%"
+            height="100px"
+            midHeight="200px"
+            midWidth="40%"
+          />
           <Div paddingL="15px" direction="column">
             <P top="0px" weight="bold" size="21px" color={colorP}>
               {each.title}
@@ -117,7 +124,7 @@ class Trending extends Component {
     ))
   }
 
-  getStaus = isDarkTheme => {
+  getStatus = isDarkTheme => {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConst.inProgress:
@@ -144,7 +151,13 @@ class Trending extends Component {
           return (
             <>
               <Header />
-              <Div bg={bgC} color={color} height="100vh">
+              <Div
+                midDirection="row"
+                direction="column"
+                bg={bgC}
+                color={color}
+                height="100vh"
+              >
                 <Sidebar />
                 <Div direction="column" width="100%">
                   <Div height="200px" bg={topBg}>
@@ -167,13 +180,13 @@ class Trending extends Component {
                     </Div>
                   </Div>
                   <Ul
-                    padding="40px"
+                    padding="20px"
                     direction="column"
                     width="100%"
                     scroll="scroll"
                     align="center"
                   >
-                    {this.getStaus(isDarkTheme)}
+                    {this.getStatus(isDarkTheme)}
                   </Ul>
                 </Div>
               </Div>

@@ -9,9 +9,13 @@ export const Div = styled.div`
   color: ${props => props.color};
   padding: ${props => props.padding};
   width: ${props => props.width};
+  // height: ${props => props.height};
   text-align: ${props => props.align};
   margin-top: ${props => props.top};
   margin-left: ${props => props.left};
+  @media (min-width: 768px) {
+    flex-direction: ${props => props.midDirection};
+  }
 `
 export const Img = styled.img`
   width: ${props => props.width};

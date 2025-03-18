@@ -2,15 +2,22 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
   display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 export const HomeContainer = styled.div`
+  width: 100%;
   height: 100vh;
-  width: 83%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   background-color: ${props => props.bg};
   color: ${props => props.color};
+  @media (min-width: 768px) {
+    width: 83%;
+  }
 `
 export const BannerCon = styled.div`
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
@@ -74,4 +81,7 @@ export const InputBtn = styled.button`
   padding: 4px;
   width: 40px;
 `
-export const Ul = styled(DetailsContainer)``
+export const Ul = styled(DetailsContainer)`
+  width: 100%;
+  padding-left: 0px;
+`

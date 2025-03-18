@@ -40,8 +40,8 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "craco test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",

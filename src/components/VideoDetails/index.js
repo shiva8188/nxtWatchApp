@@ -125,7 +125,7 @@ class VideoDetails extends Component {
 
         return (
           <Div direction="column" padding="13px" width="100%">
-            <Div width="100%">
+            <Div width="100%" height="200px">
               <ReactPlayer
                 url={videoUrl}
                 light={thumbnail}
@@ -266,7 +266,8 @@ class VideoDetails extends Component {
               <Header />
               <Div
                 data-testid="videoItemDetails"
-                direction="row"
+                direction="column"
+                midDirection="row"
                 bg={bgC}
                 color={color}
                 width="100%"

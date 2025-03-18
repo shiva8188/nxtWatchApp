@@ -15,6 +15,10 @@ export const Div = styled.div`
   padding: ${props => props.padding};
   align-self: ${props => props.self};
   overflow-y: ${props => props.scroll};
+
+  @media (min-width: 768px) {
+    flex-direction: ${props => props.midDirection};
+  }
 `
 export const H1 = styled.h1`
   color: ${props => props.color};
@@ -31,6 +35,11 @@ export const Button = styled.button`
 `
 export const Img = styled.img`
   width: ${props => props.width};
+  height: ${props => props.height};
+  @media (min-width: 768px) {
+    width: ${props => props.midWidth};
+    height: ${props => props.midHeight};
+  }
 `
 export const Ul = styled.ul`
   height: ${props => props.height};

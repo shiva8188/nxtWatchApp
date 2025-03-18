@@ -9,7 +9,6 @@ const SideItem = props => {
     onChangeId(id)
   }
   const bgColor = isActiveId ? {color} : ''
-  console.log(bgColor)
 
   return (
     <Link to={`/${text}`}>

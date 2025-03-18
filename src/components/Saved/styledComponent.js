@@ -15,6 +15,10 @@ export const Div = styled.div`
   padding: ${props => props.padding};
   align-self: ${props => props.self};
   overflow-y: ${props => props.scroll};
+
+  @media (min-width: 768px) {
+    flex-direction: ${props => props.midDirection};
+  }
 `
 export const H1 = styled.h1`
   color: ${props => props.color};
@@ -31,6 +35,7 @@ export const Button = styled.button`
 `
 export const Img = styled.img`
   width: ${props => props.width};
+  margin-bottom: 5px;
 `
 export const Ul = styled.ul`
   height: ${props => props.height};
@@ -54,7 +59,7 @@ export const Li = styled.li`
     width: ${props => props.width};
     height: ${props => props.height};
     display: flex;
-    flex-direction: ${props => props.direction};
+    flex-direction: column;
     justify-content: ${props => props.justify};
     align-items: ${props => props.align};
     padding: ${props => props.padding};
@@ -63,6 +68,9 @@ export const Li = styled.li`
     color: ${props => props.color}
     margin-top: 10px;
     margin-bottom: 20px;
+    @media (min-width: 768px){
+       flex-direcion: row;
+    }
 `
 export const P = styled.p`
   color: ${props => props.color};

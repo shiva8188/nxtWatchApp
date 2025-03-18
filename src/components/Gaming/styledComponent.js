@@ -15,6 +15,10 @@ export const Div = styled.div`
   padding: ${props => props.padding};
   align-self: ${props => props.self};
   overflow-y: ${props => props.scroll};
+
+  @media (min-width: 768px) {
+    flex-direction: ${props => props.midDirection};
+  }
 `
 export const H1 = styled.h1`
   color: ${props => props.color};
